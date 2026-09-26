@@ -1,0 +1,31 @@
+{
+  "name": "pulseengine",
+  "version": "1.0.0",
+  "description": "PulseEngine is a hybrid platform that includes three main components. The first is a low-latency Feature Flagging Engine, which allows for things like Redis evaluation, percentage rollouts, and environment targeting. The second component is a resilient Webhook Delivery Engine that features asynchronous queues, exponential backoff retries, dead-letter queues, and HMAC SHA-256 signatures. Finally, there is a lightweight universal Client SDK.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "Abul Yaman",
+  "license": "MIT",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.6.0",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1"
+  }
+}
