@@ -4,8 +4,10 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-        "migrate:up": "node-pg-migrate up --envPath ./../../.env",
-        "migrate:down": "node-pg-migrate down --envPath ./../../.env"
+        "migrate:create": "node-pg-migrate create",
+        "migrate:up": "node-pg-migrate up --envPath ../../.env",
+        "migrate:down": "node-pg-migrate down --envPath ../../.env",
+        "migrate:redo": "node-pg-migrate redo --envPath ../../.env"
     },
     "dependencies": {
         "pg": "^8.23.0"

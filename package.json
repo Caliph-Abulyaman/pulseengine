@@ -6,8 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "db:migrate:create": "pnpm --filter @pulseengine/db migrate:create",
     "db:migrate:up": "pnpm --filter @pulseengine/db migrate:up",
-    "db:migrate:down": "pnpm --filter @pulseengine/db migrate:down"
+    "db:migrate:down": "pnpm --filter @pulseengine/db migrate:down",
+    "db:migrate:redo": "pnpm --filter @pulseengine/db migrate:redo"
   },
   "keywords": [],
   "author": "Abul Yaman",
