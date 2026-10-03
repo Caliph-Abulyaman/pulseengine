@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "db:migrate:up": "pnpm --filter @pulseengine/db migrate:up",
+    "db:migrate:down": "pnpm --filter @pulseengine/db migrate:down"
   },
   "keywords": [],
   "author": "Abul Yaman",
