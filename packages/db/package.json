@@ -1,0 +1,20 @@
+{
+    "name": "@pulseengine/db",
+    "version": "0.0.1",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "migrate:create": "node-pg-migrate create",
+        "migrate:up": "node-pg-migrate up --envPath ../../.env",
+        "migrate:down": "node-pg-migrate down --envPath ../../.env",
+        "migrate:redo": "node-pg-migrate redo --envPath ../../.env"
+    },
+    "dependencies": {
+        "pg": "^8.23.0"
+    },
+    "devDependencies": {
+        "dotenv": "^18.0.5",
+        "@types/pg": "^8.23.1",
+        "node-pg-migrate": "^9.0.0"
+    }
+}
